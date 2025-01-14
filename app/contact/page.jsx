@@ -1,9 +1,9 @@
 import React from 'react'
-const Work = () => {
+const Contact = () => {
     return(
-        <div> work page</div>
+        <div> contact page</div>
     )
 };
 
 {/*testing Git*/}
-export default Work;
+export default Contact;
