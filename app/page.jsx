@@ -5,6 +5,7 @@ import {Section} from "lucide-react";
 //components
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
+import Stats from "@/components/ui/Stats";
 
 const Home = () => {
   return(
@@ -42,6 +43,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+          <Stats/>
       </section>
   );
 };
