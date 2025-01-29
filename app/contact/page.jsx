@@ -46,11 +46,36 @@ const Contact = () => {
                                <Input type="email" placeholder="Email Address"/>
                                <Input type="phone" placeholder="Phone Number"/>
                            </div>
+                           {/*select*/}
+                           <Select>
+                               <SelectTrigger className="w-full">
+                                   <SelectValue placeholder="Select an option" />
+                               </SelectTrigger>
+
+                                <SelectContent>
+                                    <SelectGroup>
+                                        <SelectLabel>Select an option</SelectLabel>
+                                        <SelectItem value="est">Java</SelectItem>
+                                        <SelectItem value="cst">Kafka</SelectItem>
+                                        <SelectItem value="mst">React</SelectItem>
+                                    </SelectGroup>
+                                 </SelectContent>
+                           </Select>
+                           {/*textarea*/}
+                           <Textarea className="h-[200px]" placeholder="Type your message here." />
+                           {/*btn*/}
+                           <Button size="md" className="max-w-40">
+                               Send message
+                           </Button>
                        </form>
                      </div>
                      {/*info*/}
                     <div className="flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0">
-                        info
+                        <ul>
+                            {info.map((item, index)=>{
+                                return <li
+                            })}
+                        </ul>
                     </div>
                 </div>
             </div>
