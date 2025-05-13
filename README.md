@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Anirban's Portfolio
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js 15, React 19, and Tailwind CSS. This portfolio showcases professional work, services, resume, and contact information with smooth animations and transitions.
 
-First, run the development server:
+## 🚀 Features
 
+- Modern and responsive design
+- Smooth page transitions and animations using Framer Motion
+- Interactive UI components using Radix UI
+- Tailwind CSS for styling
+- Optimized performance with Next.js
+- SEO friendly
+- Dark mode support
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 15.1.4
+- **UI Library:** React 19
+- **Styling:** Tailwind CSS
+- **Animation:** Framer Motion
+- **UI Components:** Radix UI
+- **Icons:** Lucide React, React Icons
+- **Carousel:** Swiper
+- **Counter:** React CountUp
+
+## 📦 Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/anirban-portfolio.git
+cd anirban-portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.jsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+## 🏗️ Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+anirban-portfolio/
+├── app/                    # Next.js app directory
+│   ├── contact/           # Contact page
+│   ├── resume/            # Resume page
+│   ├── services/          # Services page
+│   ├── work/              # Work/Projects page
+│   └── layout.jsx         # Root layout
+├── components/            # React components
+│   ├── ui/               # UI components
+│   ├── Header.jsx        # Header component
+│   ├── Nav.jsx           # Navigation component
+│   └── ...               # Other components
+├── public/               # Static assets
+└── lib/                  # Utility functions and configurations
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Available Scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `npm run dev` - Start development server with Turbopack
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
-## Deploy on Vercel
+## 📝 License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the terms included in the LICENSE file.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+
+## 📧 Contact
+
+For any queries or suggestions, please reach out through the contact page on the portfolio website.
