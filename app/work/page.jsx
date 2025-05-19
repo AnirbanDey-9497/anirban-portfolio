@@ -14,23 +14,83 @@ import WorkSliderBtns from "@/components/ui/WorkSliderBtns";
 const projects = [
     {
         num: "01",
-        category: "frontend",
-        title: "project 1",
-        description: "frame it according to your needs",
-        stack: [{name:"Html 5"}, {name: "Css 3"},{name: "Javascript"}],
-        image:"/work/thumb1.png",
-        live: '',
-        github: "",
+        category: "Rekord",
+        title: "Rekord",
+        description: "An AI-powered platform for seamless video recording, sharing, and analysis—featuring automatic transcription, smart summaries, and interactive Q&A.",
+        stack: [{name:"Next.js"}, {name: "TypeScript"}, {name: "Socket.IO"} ,{name: "Tailwind CSS"}],
+        image:"/work/rekord1.png",
+        live: 'https://github.com/AnirbanDey-9497/Rekord',
+        github: "https://github.com/AnirbanDey-9497/Rekord",
     },
     {
         num: "02",
-        category: "fullstack",
-        title: "project 2",
-        description: "frame it according to your needs",
-        stack: [{name:"Next.js"}, {name: "Tailwind.css"},{name: "Node.js"}],
-        image:"/work/thumb2.png",
-        live: '',
-        github: "",
+        category: "MediSync",
+        title: "MediSync",
+        description: "A comprehensive healthcare management system that seamlessly integrates healthcare operations through microservices architecture.",
+        stack: [{name:"Spring Boot"}, {name: "Kafka"}, {name: "grpc"}, {name: "AWS"}, {name: "JWT"}, {name: "Docker"}],
+        image:"/work/MediSync1.png",
+        live: 'https://github.com/AnirbanDey-9497/MediSync',
+        github: "https://github.com/AnirbanDey-9497/MediSync",
+    },
+    {
+        num: "03",
+        category: "Wine Classification Analysis",
+        title: "Wine Classification Analysis",
+        description: "Machine learning project for wine quality classification using various algorithms and data analysis techniques.",
+        stack: [{name:"Python"}, {name: "Scikit-learn"}, {name: "Pandas"}, {name: "NumPy"}],
+        image:"/work/WineClassification.png",
+        live: 'https://github.com/AnirbanDey-9497/Wine-Classification-Analysis',
+        github: "https://github.com/AnirbanDey-9497/Wine-Classification-Analysis",
+    },
+    {
+        num: "04",
+        category: "Rekord Desktop",
+        title: "Rekord Desktop",
+        description: "A modern screen and webcam recording app with real-time preview, multi-window controls, and seamless audio/video integration. Built with Electron and React, it's designed for effortless, high-quality desktop capture.",
+        stack: [{name:"Electron"}, {name: "React"}, {name: "TypeScript"}, {name: "Vite"}, {name: "IPC Renderer"}],
+        image:"/work/rekord-desktop.png",
+        live: 'https://github.com/AnirbanDey-9497/Rekord-Desktop',
+        github: "https://github.com/AnirbanDey-9497/Rekord-Desktop",
+    },
+    {
+        num: "05",
+        category: "Rekord Express",
+        title: "Rekord Express",
+        description: "Node.js/Express backend for real-time video processing, chunk handling, AWS S3/CloudFront storage, and OpenAI-powered features. Core backend for the Rekord ecosystem.",
+        stack: [{name:"Node.js"}, {name: "Express"}, {name: "Socket.IO"}, {name: "AWS S3"}, {name: "OpenAI"}],
+        image:"/work/rekord-express.png",
+        live: 'https://github.com/AnirbanDey-9497/Rekord-Express',
+        github: "https://github.com/AnirbanDey-9497/Rekord-Express",
+    },
+    {
+        num: "06",
+        category: "Portfolio Website",
+        title: "Portfolio Website",
+        description: "Personal portfolio website showcasing projects and skills with modern design and animations.",
+        stack: [{name:"Next.js"}, {name: "Tailwind CSS"}, {name: "Framer Motion"}],
+        image:"/work/portfolio.png",
+        live: 'https://github.com/AnirbanDey-9497/anirban-portfolio',
+        github: "https://github.com/AnirbanDey-9497/anirban-portfolio",
+    },
+    {
+        num: "07",
+        category: "Multithreading & Performance Testing",
+        title: "Multithreading & Performance Testing",
+        description: "Advanced Java project demonstrating multithreading concepts and performance optimization techniques.",
+        stack: [{name:"Java"}, {name: "Deadlock scenarios"}, {name: "Concurrency"}, {name:"Throughput Testing"}],
+        image:"/work/Multi.png",
+        live: 'https://github.com/AnirbanDey-9497/Multithreading-and-Performance-Testing',
+        github: "https://github.com/AnirbanDey-9497/Multithreading-and-Performance-Testing",
+    },
+    {
+        num: "08",
+        category: "Functional Programming in Java",
+        title: "Functional Programming in Java",
+        description: "Implementation of functional programming concepts and patterns in Java with practical examples.",
+        stack: [{name:"Java"}, {name: "Lambda"}, {name: "Stream API"}, {name: "Functional Interfaces"}],
+        image:"/work/Functional.png",
+        live: 'https://github.com/AnirbanDey-9497/Functional_Programming_Java',
+        github: "https://github.com/AnirbanDey-9497/Functional_Programming_Java",
     },
 ];
 const Work = () => {
@@ -113,8 +173,8 @@ const Work = () => {
                                         {/*overlay*/}
                                         <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                                         {/*image*/}
-                                        <div className="relative w-full h-full">
-                                            <Image src={project.image} fill className="object-cover" alt="" />
+                                        <div className="relative w-full h-full flex items-center justify-center bg-[#18181b]">
+                                            <Image src={project.image} fill className="object-contain" alt="" />
                                         </div>
                                     </div>
                                 </SwiperSlide>
