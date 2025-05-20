@@ -19,7 +19,7 @@ const stats = [
         description: "From Java to Cloud"
     },
     {
-        num: 1000,
+        num: 2500,
         text: "Code Contributions",
         icon: <FaProjectDiagram className="text-4xl text-accent" />,
         suffix: "+",
