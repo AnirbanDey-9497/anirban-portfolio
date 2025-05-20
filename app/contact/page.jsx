@@ -66,8 +66,10 @@ const Contact = () => {
                 body: JSON.stringify(formData),
             });
 
+            const data = await response.json();
+
             if (!response.ok) {
-                throw new Error('Failed to send message');
+                throw new Error(data.details || 'Failed to send message');
             }
 
             toast.success('Message sent successfully!');
@@ -80,7 +82,7 @@ const Contact = () => {
                 message: ''
             });
         } catch (error) {
-            toast.error('Failed to send message. Please try again.');
+            toast.error(error.message || 'Failed to send message. Please try again.');
             console.error('Error:', error);
         } finally {
             setIsSubmitting(false);
